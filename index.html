@@ -1,1 +1,227 @@
-a
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NoteRoom | 학습 노트</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-icon">📚</span>
+        <div>
+          <h1>NoteRoom</h1>
+          <p>My Study Desk</p>
+        </div>
+      </div>
+
+      <nav class="menu" aria-label="주요 메뉴">
+        <a href="#" class="active">🏠 홈</a>
+        <a href="#subjects">📘 강의 노트</a>
+        <a href="#tasks">✅ 과제 관리</a>
+        <a href="#exam">🧠 시험 대비</a>
+        <a href="#library">🗂 자료실</a>
+        <a href="#review">🔁 복습 노트</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <p class="label">이번 주 목표</p>
+        <strong>노트 8개 정리</strong>
+        <div class="progress">
+          <span></span>
+        </div>
+        <small>5 / 8 완료</small>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">오늘의 학습 공간</p>
+          <h2>안녕하세요, 오늘도 차근차근 정리해봐요 ✨</h2>
+        </div>
+        <div class="search-box">
+          <span>🔍</span>
+          <input type="search" placeholder="노트, 과목, 키워드 검색" />
+        </div>
+      </header>
+
+      <section class="hero-card">
+        <div>
+          <p class="label">Today's Focus</p>
+          <h3>AI 프롬프트 엔지니어링 정리하기</h3>
+          <p>수업에서 배운 핵심 개념을 카드형 노트로 정리하고, 복습 태그를 달아보세요.</p>
+        </div>
+        <button type="button">+ 새 노트 작성</button>
+      </section>
+
+      <section class="stats-grid" aria-label="학습 요약">
+        <article class="stat-card">
+          <span>📌</span>
+          <p>오늘 할 일</p>
+          <strong>4개</strong>
+        </article>
+        <article class="stat-card">
+          <span>📝</span>
+          <p>작성한 노트</p>
+          <strong>23개</strong>
+        </article>
+        <article class="stat-card">
+          <span>⏰</span>
+          <p>다가오는 마감</p>
+          <strong>2개</strong>
+        </article>
+        <article class="stat-card">
+          <span>🔥</span>
+          <p>연속 학습</p>
+          <strong>7일</strong>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <div class="left-column">
+          <section class="panel" id="subjects">
+            <div class="section-title">
+              <h3>과목별 노트</h3>
+              <a href="#">전체 보기</a>
+            </div>
+
+            <div class="subject-grid">
+              <article class="subject-card">
+                <span class="emoji">🤖</span>
+                <h4>AI 수업</h4>
+                <p>프롬프트, 생성형 AI, 자동화</p>
+                <div class="tags">
+                  <span>전공</span>
+                  <span>중요</span>
+                </div>
+              </article>
+
+              <article class="subject-card">
+                <span class="emoji">💻</span>
+                <h4>웹 개발</h4>
+                <p>HTML, CSS, JavaScript</p>
+                <div class="tags">
+                  <span>실습</span>
+                  <span>프로젝트</span>
+                </div>
+              </article>
+
+              <article class="subject-card">
+                <span class="emoji">📊</span>
+                <h4>데이터 분석</h4>
+                <p>엑셀, 표 정리, 시각화</p>
+                <div class="tags">
+                  <span>복습필요</span>
+                </div>
+              </article>
+
+              <article class="subject-card">
+                <span class="emoji">🎤</span>
+                <h4>발표 자료</h4>
+                <p>기획안, PPT, 발표 스크립트</p>
+                <div class="tags">
+                  <span>과제</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="panel" id="review">
+            <div class="section-title">
+              <h3>최근 작성한 노트</h3>
+              <a href="#">정렬</a>
+            </div>
+
+            <div class="note-list">
+              <article class="note-item">
+                <div>
+                  <h4>프롬프트 엔지니어링 기본 구조</h4>
+                  <p>역할, 명령문, 제약 조건, 입력문 정리</p>
+                </div>
+                <span class="badge">AI 수업</span>
+              </article>
+
+              <article class="note-item">
+                <div>
+                  <h4>Notion형 학습 홈페이지 설계</h4>
+                  <p>카드 레이아웃과 사이드바 구조</p>
+                </div>
+                <span class="badge">웹 개발</span>
+              </article>
+
+              <article class="note-item">
+                <div>
+                  <h4>엑셀 데이터 오류 확인 방법</h4>
+                  <p>수식, 빈값, 중복값 점검 순서</p>
+                </div>
+                <span class="badge">데이터</span>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="right-column">
+          <section class="panel" id="tasks">
+            <div class="section-title">
+              <h3>과제 / 시험 일정</h3>
+            </div>
+
+            <div class="todo-list">
+              <label class="todo-item">
+                <input type="checkbox" checked />
+                <span>
+                  <strong>AI 강의 요약</strong>
+                  <small>오늘까지</small>
+                </span>
+              </label>
+
+              <label class="todo-item">
+                <input type="checkbox" />
+                <span>
+                  <strong>웹 페이지 CSS 정리</strong>
+                  <small>내일까지</small>
+                </span>
+              </label>
+
+              <label class="todo-item">
+                <input type="checkbox" />
+                <span>
+                  <strong>중간고사 개념 복습</strong>
+                  <small>3일 남음</small>
+                </span>
+              </label>
+            </div>
+          </section>
+
+          <section class="panel" id="exam">
+            <div class="section-title">
+              <h3>시험 대비</h3>
+            </div>
+            <div class="exam-box">
+              <p class="label">다음 시험</p>
+              <h4>웹 개발 기초</h4>
+              <p>HTML 구조, CSS 선택자, 반응형 레이아웃</p>
+              <div class="exam-date">D-12</div>
+            </div>
+          </section>
+
+          <section class="panel" id="library">
+            <div class="section-title">
+              <h3>자료실</h3>
+            </div>
+            <ul class="resource-list">
+              <li>📄 강의 PDF 모음</li>
+              <li>🔗 참고 사이트 링크</li>
+              <li>🖼 발표 이미지 자료</li>
+              <li>📁 팀플 공유 자료</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
