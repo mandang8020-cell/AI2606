@@ -3,220 +3,231 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NoteRoom | Study Notes for What's Next</title>
+  <title>NoteRoom | AI Study Archive</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="preloader" aria-hidden="true">
-    <div class="preloader-panel preloader-panel-top">
-      <p>NoteRoom</p>
-    </div>
-    <div class="preloader-panel preloader-panel-bottom">
-      <p>배운 내용을 정리하는 중<span></span></p>
-    </div>
-    <div class="preloader-line"></div>
-  </div>
-
-  <header class="site-header">
-    <a class="brand" href="#">
-      <span class="brand-mark">N</span>
+  <header class="gnb">
+    <a class="brand" href="#hero" aria-label="NoteRoom home">
+      <span class="brand-mark">NR</span>
       <span>NoteRoom</span>
     </a>
 
     <nav class="nav" aria-label="주요 메뉴">
-      <a href="#today">Today</a>
       <a href="#notes">Notes</a>
-      <a href="#flow">Flow</a>
+      <a href="#workflow">Workflow</a>
       <a href="#archive">Archive</a>
+      <a href="#plan">Plan</a>
     </nav>
+
+    <a class="cta" href="#today">오늘의 정리</a>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-meta">
-        <span>Personal Study OS</span>
-        <span>2026</span>
+    <section class="hero" id="hero">
+      <div class="hero-kicker">
+        <span>AI Prompt Engineering 01</span>
+        <span>2026 Study Website</span>
       </div>
 
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">for university students</p>
-          <h1 id="hero-title">
-            <span>Study Notes</span>
-            <span>for What’s Next<span class="cursor"></span></span>
-          </h1>
+      <h1>
+        정리하고,<br />
+        연결하고,<br />
+        다시 꺼내보는<br />
+        <span>학습 노트.</span><i></i>
+      </h1>
+
+      <div class="hero-bottom">
+        <p>
+          Notion의 정돈된 정보 구조에, 레퍼런스 파일의 과감한 타이포그래피와
+          다크 톤을 결합한 대학생용 학습 아카이브입니다.
+        </p>
+
+        <div class="hero-meta">
+          <span>01 / Dashboard</span>
+          <span>02 / Subject Cards</span>
+          <span>03 / Review Flow</span>
         </div>
+      </div>
+    </section>
 
-        <aside class="hero-card">
-          <p class="card-number">01</p>
-          <h2>오늘 배운 내용을<br />내일의 지식으로 연결</h2>
+    <section class="intro">
+      <p class="section-num">00</p>
+      <p class="intro-text">
+        배운 내용을 그냥 저장하는 것이 아니라, 수업 → 핵심 개념 → 과제 →
+        복습으로 이어지는 흐름을 한 화면에서 추적합니다.
+      </p>
+    </section>
+
+    <section class="dashboard" id="today">
+      <div class="dash-head">
+        <p class="section-num">01</p>
+        <h2>Today Board</h2>
+      </div>
+
+      <div class="dash-grid">
+        <article class="focus-card">
+          <p class="label">Today's Focus</p>
+          <h3>프롬프트 구조 정리</h3>
           <p>
-            수업 필기, 과제, 시험 대비, 복습 루틴을 하나의 흐름으로 정리하는
-            Notion 감성 학습 노트 홈페이지입니다.
+            역할, 명령문, 제약 조건, 입력문을 하나의 템플릿으로 정리하고
+            예시를 추가하세요.
           </p>
-        </aside>
-      </div>
-
-      <div class="ascii-panel" aria-label="학습 노트 구조 다이어그램">
-<pre>
-┌ NOTE ROOM ───────────────────────────────┐
-│  input  →  organize  →  connect  → review │
-│  lecture   cards       archive     exam   │
-└──────────────────────────────────────────┘
-</pre>
-      </div>
-    </section>
-
-    <section class="light-section" id="today">
-      <div class="section-head">
-        <p class="eyebrow dark">Today Board</p>
-        <h2>오늘 정리할 학습 흐름</h2>
-      </div>
-
-      <div class="bento">
-        <article class="bento-card bento-large">
-          <span class="chip">FOCUS</span>
-          <h3>AI 프롬프트 엔지니어링</h3>
-          <p>
-            역할, 명령문, 제약 조건, 입력문을 분리해서 좋은 프롬프트 구조로 정리하기.
-          </p>
-          <div class="mini-progress">
-            <span style="width:72%"></span>
+          <div class="focus-progress">
+            <span></span>
           </div>
-          <small>72% 정리 완료</small>
+          <small>진행률 68%</small>
         </article>
 
-        <article class="bento-card">
-          <span class="chip">TASK</span>
-          <h3>과제 3개</h3>
-          <p>웹페이지 수정, 강의 요약, 발표 자료 초안</p>
+        <article class="metric">
+          <span>04</span>
+          <p>오늘 할 일</p>
         </article>
 
-        <article class="bento-card dark-card">
-          <span class="chip chip-red">D-12</span>
-          <h3>웹 개발 기초 시험</h3>
-          <p>HTML 구조와 CSS 레이아웃 복습 필요</p>
+        <article class="metric">
+          <span>23</span>
+          <p>누적 노트</p>
         </article>
 
-        <article class="bento-card">
-          <span class="chip">REVIEW</span>
-          <h3>복습 노트 5개</h3>
-          <p>헷갈린 개념만 다시 보는 짧은 복습 루틴</p>
+        <article class="metric accent">
+          <span>D-12</span>
+          <p>다음 시험</p>
         </article>
       </div>
     </section>
 
-    <section class="notes-section" id="notes">
-      <div class="section-head">
-        <p class="eyebrow">Notes Map</p>
-        <h2>과목별 노트를 한눈에 보기</h2>
+    <section class="notes" id="notes">
+      <div class="section-title">
+        <p class="section-num">02</p>
+        <h2>Subject Notes</h2>
       </div>
 
-      <div class="note-rows">
-        <article class="note-row">
-          <span class="row-index">01</span>
-          <div>
-            <h3>AI 수업</h3>
-            <p>생성형 AI, 프롬프트 구조, 실습 기록</p>
-          </div>
-          <div class="row-tags">
-            <span>전공</span>
-            <span>중요</span>
-          </div>
+      <div class="note-grid">
+        <article class="note-card dark">
+          <p>AI CLASS</p>
+          <h3>프롬프트 엔지니어링</h3>
+          <ul>
+            <li>역할 설정</li>
+            <li>출력 형식 지정</li>
+            <li>반복 개선</li>
+          </ul>
         </article>
 
-        <article class="note-row">
-          <span class="row-index">02</span>
-          <div>
-            <h3>웹 개발</h3>
-            <p>HTML, CSS, 반응형 레이아웃, GitHub 업로드</p>
-          </div>
-          <div class="row-tags">
-            <span>실습</span>
-            <span>프로젝트</span>
-          </div>
+        <article class="note-card">
+          <p>WEB DEV</p>
+          <h3>HTML / CSS</h3>
+          <ul>
+            <li>시맨틱 구조</li>
+            <li>반응형 레이아웃</li>
+            <li>카드 UI</li>
+          </ul>
         </article>
 
-        <article class="note-row">
-          <span class="row-index">03</span>
-          <div>
-            <h3>데이터 분석</h3>
-            <p>엑셀 오류 분석, 표 구조화, 시각화</p>
-          </div>
-          <div class="row-tags">
-            <span>복습필요</span>
-          </div>
+        <article class="note-card">
+          <p>DATA</p>
+          <h3>데이터 정리</h3>
+          <ul>
+            <li>표 구조화</li>
+            <li>오류 확인</li>
+            <li>시각화</li>
+          </ul>
         </article>
 
-        <article class="note-row">
-          <span class="row-index">04</span>
-          <div>
-            <h3>발표 자료</h3>
-            <p>기획안, 이미지 자료, 발표 스크립트</p>
-          </div>
-          <div class="row-tags">
-            <span>과제</span>
+        <article class="note-card image-card">
+          <p>ARCHIVE</p>
+          <h3>PDF · 이미지 · 링크</h3>
+          <div class="visual-stack">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="light-section split-section" id="flow">
-      <div class="section-head sticky-title">
-        <p class="eyebrow dark">Study Flow</p>
-        <h2>노트가 쌓이는 방식</h2>
+    <section class="workflow" id="workflow">
+      <div class="section-title">
+        <p class="section-num">03</p>
+        <h2>Study Workflow</h2>
       </div>
 
-      <div class="flow-list">
+      <div class="timeline">
         <article>
           <span>01</span>
           <h3>Capture</h3>
-          <p>수업에서 들은 내용을 빠르게 기록합니다.</p>
+          <p>수업 중 배운 키워드를 빠르게 기록합니다.</p>
         </article>
         <article>
           <span>02</span>
           <h3>Structure</h3>
-          <p>핵심 개념, 예시, 질문을 나눠 정리합니다.</p>
+          <p>개념, 예시, 질문, 과제로 나누어 정리합니다.</p>
         </article>
         <article>
           <span>03</span>
           <h3>Connect</h3>
-          <p>관련 과목과 개념을 서로 연결합니다.</p>
+          <p>비슷한 주제의 노트를 태그와 링크로 연결합니다.</p>
         </article>
         <article>
           <span>04</span>
           <h3>Review</h3>
-          <p>시험 전 다시 볼 수 있도록 복습 태그를 붙입니다.</p>
+          <p>시험 전 핵심 카드만 다시 모아 복습합니다.</p>
         </article>
       </div>
     </section>
 
-    <section class="archive-section" id="archive">
-      <div class="section-head">
-        <p class="eyebrow">Archive</p>
-        <h2>자료실과 즐겨찾기</h2>
+    <section class="archive" id="archive">
+      <div class="archive-left">
+        <p class="section-num">04</p>
+        <h2>Archive Index</h2>
       </div>
 
-      <div class="archive-grid">
+      <div class="archive-table">
+        <div class="row">
+          <span>최근 노트</span>
+          <strong>Notion형 홈페이지 레이아웃 설계</strong>
+          <em>Web Dev</em>
+        </div>
+        <div class="row">
+          <span>복습 필요</span>
+          <strong>AI 프롬프트 입력문 구성 방식</strong>
+          <em>AI Class</em>
+        </div>
+        <div class="row">
+          <span>과제</span>
+          <strong>강의 자료 5페이지 구성안</strong>
+          <em>Presentation</em>
+        </div>
+        <div class="row">
+          <span>자료</span>
+          <strong>PDF 강의자료와 이미지 참고 링크</strong>
+          <em>Library</em>
+        </div>
+      </div>
+    </section>
+
+    <section class="plan" id="plan">
+      <p class="section-num">05</p>
+      <h2>Plan your learning rhythm.</h2>
+      <div class="plan-grid">
         <article>
-          <p>PDF Library</p>
-          <h3>강의자료 보관함</h3>
+          <h3>Plan</h3>
+          <p>오늘 배울 주제를 한 줄로 정합니다.</p>
         </article>
         <article>
-          <p>Links</p>
-          <h3>참고 사이트 모음</h3>
+          <h3>Write</h3>
+          <p>핵심 개념을 카드 단위로 쪼개 기록합니다.</p>
         </article>
         <article>
-          <p>Presentation</p>
-          <h3>발표 이미지 & 스크립트</h3>
+          <h3>Align</h3>
+          <p>복습 날짜와 시험 범위에 맞춰 다시 정렬합니다.</p>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>NoteRoom © 2026</p>
-    <p>Organize what you learned. Move towards what’s next.</p>
+  <footer>
+    <p>NoteRoom — Personal Learning Archive</p>
+    <a href="#hero">Back to top</a>
   </footer>
 </body>
 </html>
